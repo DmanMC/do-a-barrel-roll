@@ -165,7 +165,7 @@ public class DoABarrelRollClient {
                 .useModifier(DoABarrelRollClient::strafeButtons)
                 .applySensitivity(sensitivity)
                 .useModifier(ModConfig.INSTANCE::configureRotation)
-                .smooth(pitchSmoother, yawSmoother, rollSmoother, ROTATION_SMOOTHNESS)
+               // .smooth(pitchSmoother, yawSmoother, rollSmoother, ROTATION_SMOOTHNESS)
                 .useModifier(DoABarrelRollClient::banking, () -> ModConfig.INSTANCE.getEnableBanking())
         );
     }
